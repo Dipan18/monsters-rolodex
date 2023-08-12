@@ -7,7 +7,7 @@ import SearchBar from './components/search-bar/search-bar.component';
 
 import './App.css';
 
-type Monster = {
+export type Monster = {
   id: string,
   name: string,
   email: string
