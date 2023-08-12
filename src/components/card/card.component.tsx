@@ -1,8 +1,16 @@
-import { Component } from 'react';
+import {Monster} from '../../App';
 
 import './card.styles.css';
 
-const Card = (props) => {
+type CardProps = {
+  className: string;
+  imgAlt: string;
+  imgSrc: string;
+  title: string;
+  body: string;
+}
+
+const Card = (props: CardProps) => {
   const { className, imgAlt, imgSrc, title, body } = props;
   return (
     <div className={className}>
